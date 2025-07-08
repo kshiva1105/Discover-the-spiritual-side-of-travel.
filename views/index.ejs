@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Indian Tourism</title>
+</head>
+<body>
+    <%- include('partials/navbar') %>
+    <%- include('partials/header') %>
+    <main>
+        <h2>Welcome to Indian Tourism</h2>
+        <p>Discover the beauty of India...</p>
+        
+        <section class="states">
+            <h3>Explore States of India</h3>
+            <div class="state" id="north">
+                <h4>North India</h4>
+                <a href="/north"><img src="/images/north-india.jpeg" alt="North India"></a>
+                <p>Explore the majestic Himalayas, historical cities like Delhi and Agra, and the vibrant culture of Punjab.</p>
+            </div>
+            <div class="state" id="south">
+                <h4>South India</h4>
+                <a href="/south"><img src="/images/south-india.jpg" alt="South India"></a>
+                <p>Experience the serene backwaters of Kerala, beautiful beaches of Goa, and the rich heritage of Tamil Nadu.</p>
+            </div>
+            <div class="state" id="east">
+                <h4>East India</h4>
+                <a href="/east"><img src="/images/east-india.jpg" alt="East India"></a>
+                <p>Discover the natural beauty of Assam, the cultural richness of West Bengal, and the tranquility of Odisha.</p>
+            </div>
+            <div class="state" id="west">
+                <h4>West India</h4>
+                <a href="/west"><img src="/images/west-india.jpeg" alt="West India"></a>
+                <p>Marvel at the historical sites of Maharashtra, the deserts of Rajasthan, and the diverse landscapes of Gujarat.</p>
+            </div>
+        </section>
+
+        <section class="featured-tours">
+            <h3>Featured Tours</h3>
+            <div class="tour">
+                <img src="/images/Golden.jpg" alt="Golden Triangle Tour">
+                <h4>Golden Triangle Tour</h4>
+                <p>Delhi, Agra, Jaipur - 7 Days</p>
+                <button>Book Now</button>
+            </div>
+            <div class="tour">
+                <img src="/images/Kerala.jpg" alt="Kerala Backwaters">
+                <h4>Kerala Backwaters</h4>
+                <p>Explore the serene backwaters of Kerala - 5 Days</p>
+                <button>Book Now</button>
+            </div>
+        </section>
+    </main>
+    <%- include('partials/footer') %>
+</body>
+</html>
